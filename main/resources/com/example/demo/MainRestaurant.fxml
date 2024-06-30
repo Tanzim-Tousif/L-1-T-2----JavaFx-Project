@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainRestaurant">
+   <children>
+      <ImageView fitHeight="508.0" fitWidth="721.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pexels-lumn-1028599.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="31.0" layoutY="155.0" opacity="0.96" prefHeight="338.0" prefWidth="658.0" stylesheets="@styles.css">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="275.20001220703125" text="NAME" />
+          <TableColumn fx:id="category" prefWidth="281.5999755859375" text="CATEGORY" />
+            <TableColumn fx:id="price" prefWidth="98.4000244140625" text="PRICE" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="216.0" layoutY="96.0" prefHeight="34.0" prefWidth="131.0" style="-fx-background-color: #66FF66;" text="Menu List" textFill="#ff0808">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="591.0" layoutY="22.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="90.0" style="-fx-background-radius: 50;" text="Main Menu">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
