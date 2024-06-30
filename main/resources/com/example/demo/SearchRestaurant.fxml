@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="734.0" style="-fx-background-image: SearchRestaurant.jpg;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SearchRestaurant">
+   <children>
+      <ImageView fitHeight="547.0" fitWidth="734.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SearchRestaurant.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="367.0" layoutY="61.0" mnemonicParsing="false" onAction="#name" prefHeight="43.0" prefWidth="141.0" style="-fx-background-radius: 50;" text="By Name">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="377.0" layoutY="321.0" mnemonicParsing="false" onAction="#category" prefHeight="43.0" prefWidth="141.0" style="-fx-background-radius: 50;" text="By Category">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="377.0" layoutY="241.0" mnemonicParsing="false" onAction="#score" prefHeight="43.0" prefWidth="141.0" style="-fx-background-radius: 50;" text="By Score">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="377.0" layoutY="161.0" mnemonicParsing="false" onAction="#price" prefHeight="43.0" prefWidth="141.0" style="-fx-background-radius: 50;" text="By Price">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="385.0" layoutY="398.0" mnemonicParsing="false" onAction="#zip" prefHeight="43.0" prefWidth="141.0" style="-fx-background-radius: 50;" text="By ZipCode">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="472.0" mnemonicParsing="false" onAction="#back" prefHeight="43.0" prefWidth="141.0" style="-fx-background-radius: 50;" text="Main Menu">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="456.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PendingOrders">
+   <children>
+      <ImageView fitHeight="478.0" fitWidth="678.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@orders.png" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollPaneName" layoutX="13.0" layoutY="144.0" prefHeight="298.0" prefWidth="654.0" style="-fx-background-color: #D4F1F4;">
+         <content>
+            <AnchorPane prefHeight="244.0" prefWidth="654.0" style="-fx-background-color: #E0E0E0;">
+               <children>
+                  <VBox fx:id="vBox" layoutX="-3.0" layoutY="-6.0" prefHeight="290.0" prefWidth="646.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <HBox fx:id="titleBar" layoutX="14.0" layoutY="101.0" prefHeight="42.0" prefWidth="654.0" style="-fx-background-color: #808080;">
+         <children>
+            <Label fx:id="name" alignment="CENTER" prefHeight="42.0" prefWidth="476.0" text="Name" textFill="#080808">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="details" alignment="CENTER" prefHeight="45.0" prefWidth="175.0" text="All Details">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="250.0" layoutY="14.0" prefHeight="42.0" prefWidth="180.0" style="-fx-background-color: #3333FF; -fx-background-radius: 50;" text="Pending Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="578.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="75.0" style="-fx-background-radius: 50;" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="tag" alignment="CENTER" layoutX="70.0" layoutY="10.0" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #3333FF; -fx-background-radius: 50;" textFill="#fcf6f6">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
